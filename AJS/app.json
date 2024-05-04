@@ -4,10 +4,10 @@
     "slug": "AJS",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/AJSlogo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/AJSlogo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
