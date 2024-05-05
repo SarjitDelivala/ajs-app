@@ -18,7 +18,7 @@ const Drawer = createDrawerNavigator();
 export default function Mydrawer(){
     return(<Drawer.Navigator  screenOptions={{
       headerStyle: {
-       backgroundColor:"#DB4242" // Specify the height of your custom header
+       backgroundColor:"#DB4242" 
       }
     }} >
         <Drawer.Screen name="Home" component={Homepage} />
