@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text,TextInput, Button, Alert } from 'react-native';
 import * as Location from 'expo-location';
-
+import Mailer from 'react-native-mail';
 export default function Homepage({ navigation }) {
   const [location, setLocation] = useState({ coords: { latitude: null, longitude: null } });
   const [sunrise, setSunrise] = useState(null);
@@ -43,7 +43,9 @@ export default function Homepage({ navigation }) {
   };
 
   return (
+
     <View style={{ flex: 1, alignItems: 'center',margin:40, }}>
+      
       <Text>Today's Sunrise and Sunset Timing</Text>
       <Text style={{ marginTop: 12,
     padding: 12,

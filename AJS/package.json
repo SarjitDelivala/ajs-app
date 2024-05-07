@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@learn-tocode/react-native-sunrise-animation": "1.0.2",
     "@react-navigation/drawer": "^6.6.15",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/stack": "^6.3.29",
@@ -19,8 +20,11 @@
     "react-native": "0.73.6",
     "react-native-geolocation-service": "^5.3.1",
     "react-native-gesture-handler": "~2.14.0",
+    "react-native-mail": "^6.1.1",
+    "react-native-maps": "1.10.0",
     "react-native-reanimated": "~3.6.2",
-    "react-native-maps": "1.10.0"
+    "react-native-render-html": "^6.3.4",
+    "react-native-webview": "13.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
