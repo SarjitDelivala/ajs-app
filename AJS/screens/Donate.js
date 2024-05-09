@@ -1,61 +1,78 @@
-import {Text, StyleSheet,View, Button,Pressable} from 'react-native';
-export default function Donate(){
-    return(<>
-      <Text style={style.basetext}>
-      <Text style={style.title1}>General Donations{'\n'}{'\n'}</Text>
-All activities, including development of facilities, leasing are fully funded from donations and contributions from devotees and the community. Arihant Jain Sangh deeply appreciates your kind and generous support.{'\n'}{'\n'}{'\n'}
+import React from 'react';
+import { Text, StyleSheet, View, Pressable } from 'react-native';
 
-All donations are<Text style={style.inline}> tax deductible.</Text>{'\n'}{'\n'}{'\n'}
-
-Donations can be made via <Text style={style.inline}> e-Transfer, Debit Card, Cheque or Website.{'\n'}</Text></Text>   
-
-<Pressable style={style.button} >
-      <Text style={style.text}>Donate</Text>
-    </Pressable>
-
-
-<Text style={style.basetext}>
-<Text style={style.title1}>Cheque</Text>{'\n'}{'\n'}
-Send the cheque payable to <Text style={style.highlight}>Arihant Jain Sangh or Shree Arihant Shwetamber Murti Pujak Jain Sangh</Text>{'\n'}{'\n'}
-
-Mail your cheque to: 350 Rutherford Rd South, Unit #7, Brampton, ON L6W 4N6
-</Text>
-</>
-);
+export default function Donate() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.section}>
+        <Text style={styles.title}>General Donations</Text>
+        <Text style={styles.description}>
+          All activities, including development of facilities, are fully funded by donations and contributions from devotees and the community. Arihant Jain Sangh deeply appreciates your kind and generous support.
+        </Text>
+        <Text style={styles.note}>All donations are tax deductible.</Text>
+        <Text style={styles.note}>Donations can be made via e-Transfer, Debit Card, Cheque, or Website.</Text>
+        <Pressable style={styles.button}>
+          <Text style={styles.buttonText}>Donate Now</Text>
+        </Pressable>
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.title}>Cheque</Text>
+        <Text style={styles.description}>
+          Send the cheque payable to Arihant Jain Sangh or Shree Arihant Shwetamber Murti Pujak Jain Sangh to:
+        </Text>
+        <Text style={styles.address}>
+          350 Rutherford Rd South, Unit #7, Brampton, ON L6W 4N6
+        </Text>
+      </View>
+    </View>
+  );
 }
-const style=StyleSheet.create({
-basetext:{
-    fontSize:19
-   
-},
-title1:{
-    fontSize:30,
-    fontWeight:'bold'
-},
-inline:{
-    fontWeight:'bold'
-},
-button:{
-    alignSelf: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#fff',
+  },
+  section: {
+    marginBottom: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color: '#333',
+    textAlign: 'center',
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 10,
+    color: '#555',
+    textAlign: 'center',
+  },
+  note: {
+    fontSize: 14,
+    marginBottom: 5,
+    color: '#777',
+    textAlign: 'center',
+  },
+  address: {
+    fontSize: 14,
+    color: '#777',
+    textAlign: 'center',
+  },
+  button: {
     backgroundColor: '#DB4242',
     paddingVertical: 12,
     paddingHorizontal: 32,
-    borderRadius: 4,
+    borderRadius: 30,
     elevation: 3,
-    
-     
-},
-text: {
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  buttonText: {
     fontSize: 16,
-    lineHeight: 21,
     fontWeight: 'bold',
-    letterSpacing: 0.25,
     color: 'white',
   },
-highlight:{
-
-},
-
-})
+});
